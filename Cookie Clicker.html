@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie Clicker</title>
+	<style>
+		body {
+			background-color: white;
+			text-align: center;
+			font-family: Arial, sans-serif;
+		}
+		
+		button {
+			background-color: #8B5A2B;
+			color: black;
+			font-size: 24px;
+			padding: 20px;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+		}
+		
+		#points {
+			background-color: white;
+			color: black;
+			font-size: 32px;
+			border: none;
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+	<script>
+		var points = 0;
+		
+		function addPoints() {
+			points++;
+			document.getElementById("points").value = points;
+		}
+	</script>
+</head>
+<body>
+	<h1>Cookie Clicker</h1>
+	<button onclick="addPoints()">Click me!</button>
+	<br>
+	<label for="points">Points:</label>
+	<input type="text" id="points" name="points" value="0" readonly>
+</body>
+</html>
